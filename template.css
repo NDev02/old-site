@@ -1,0 +1,33 @@
+html,body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    display: grid;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 100vh auto 10vh;
+}
+
+/* Grouped Elements */
+.landing {
+    background: red;
+}
+
+.container {
+
+}
+
+.footer {
+
+}
+
+/* Individual Elements */
+.header {
+
+}
