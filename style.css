@@ -5,7 +5,7 @@
     --secondary: #333333;
     --on-secondary: white;
     --transparent-background: rgba(0, 0, 0, 0.5);
-    --nav-background: #e2803f;
+    --nav-background: #343c58;
     --link-secondary: #1e4386;
     font-family: 'Roboto', sans-serif;
     color: var(--on-primary);
@@ -28,7 +28,14 @@ body {
     grid-template-rows: 100vh auto 3em;
 }
 
-/* Grouped Elements */
+.text-center {
+    text-align: center;
+}
+
+.fill-width {
+    width: 100%;
+}
+
 .landing {
     display: grid;
     grid-template-rows: 3fr 2fr;
@@ -54,11 +61,20 @@ body {
     background: var(--secondary);
     color: var(--on-secondary);
     display: grid;
+    grid-template-columns: 1fr 1fr;
     align-content: center;
-    padding: 1.5em;
+    text-align: center;
 }
 
-/* Individual Elements */
+.footer * {
+    margin: 0;
+    color: white;
+}
+
+.footer a:hover {
+    color: var(--nav-background);
+}
+
 .video-background {
     position: fixed;
     z-index: 0;
@@ -126,10 +142,18 @@ body {
     font-weight: bold;
 }
 
+.nav ul li:first-child {
+    display: none;
+}
+
 .section {
     display: grid;
     gap: 0.5em;
     padding: 1.5em;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 5em;
+    max-width: 1000px;
 }
 
 .section a {
@@ -161,12 +185,37 @@ body {
     -webkit-user-drag: none;
 }
 
+.project {
+    min-height: 250px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    margin: 0.5em;
+    padding: 1em;
+    gap: 2em;
+    background: #ffffff;
+    border-radius: 0.8em;
+}
+
+.project div {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.project img {
+    max-height: 100%;
+    max-width: 100%;
+    align-self: center;
+}
+
 .contact-form {
     display: grid;
     gap: 1em;
     padding: 1.5em;
     background: #fff;
     border-radius: 0.8em;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
 }
 
 .input-section {
@@ -215,6 +264,16 @@ a:hover {
 }
 
 @media (max-width: 800px) {
+
+    .nav ul li:first-child {
+        display: none;
+    }
+
+    .project {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
     .section {
         display: grid;
         grid-template-columns: 1fr;
