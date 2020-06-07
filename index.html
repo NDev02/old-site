@@ -5,41 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Portfolio website for Nathan Gordon">
+    <meta name="description" content="Developer portfolio website for Nathan Gordon (NDev02)">
     <meta name="keywords" content="nathan, gordon, portfolio, programmer, web developer, developer, software, engineer">
-    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
     <title>NDev02</title>
 </head>
 
 <body>
 
     <div class="landing" id="home">
-        <video class="video-background" src="assets/code.mp4" autoplay muted loop></video>
+        <video class="video-background" src="assets/og-code.mp4" autoplay muted loop></video>
         <div class="video-cover"></div>
         <div class="head-group">
             <h1 class="header">Nathan Gordon</h1>
             <h2 class="sub-header">&lt;NDev02/&gt;</h2>
         </div>
-        <!-- <p class="paragraph">
-            I am a 18 year old developer, but I have been programming since I was 8/9. I have
+        <p class="paragraph">
+            Hello! My name is Nathan. I am a 18 year old developer, but I have been programming since I was 8/9. I have
             experience with several different programming languages and SDKs. My favorite platform is on the web, and my
             favorite programing language is JavaScript.<br/>
             Welcome to my portfolio website.
-        </p> -->
-        <p class="paragraph">
-            Hello! Thanks for stopping by but this page is currently under construction, check back later.
         </p>
+        <!-- <p class="paragraph">
+            Hello! Thanks for stopping by but this page is currently under construction, check back later.
+        </p> -->
     </div>
     <div class="container">
         <div class="nav">
             <ul>
-                <li><a href="index.html">NDev02</a></li>
+                <li><a href="index.html">NDev02</a><span class="material-icons" onclick="toggleNav()">menu</span></li>
                 <li><a href="https://github.com/NDev02" target="_blank">GitHub</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
         </div>
         <div class="section">
@@ -55,41 +57,19 @@
                 be limited, but clearly my experience is not.
             </p>
         </div>
-        <div class="section">
+        <div class="section project-container">
             <h2 class="section-header" id="projects">Projects</h2>
-            <div class="project">
-                <div>
-                    <h3>Framer</h3>
-                    <p>
-                        A janky-ish, in-development, web-framework. I mainly developed this framework because I was bored during 
-                        quarantine, but hey why not put it online 🤷‍♂️. Don't expect it to work amazingly, and definitely don't 
-                        expect it to work all the time. This project is currently not in a place I would recommend for 
-                        distribution... Let's call this v0.0.1 beta.
-                    </p>
-                    <a href="https://github.com/NDev02/Framer" target="_blank">Click to view</a>
-                </div>
-                <img src="/assets/Framer.svg" alt="Framer Logo">
-            </div>
-            <div class="project">
-                <div>
-                    <h3>WIL</h3>
-                    <p>
-                        Using machine learning with ML5 and Tensorflow this is a website that has been trained on pre-existing
-                        blocks of text that it is able to use to generate new chunks of text. The models are pre-trained so that
-                        performance is optimal on most devices. Simply open the website, plug in a few parameters, choose 
-                        a model from a dropdown and hit run.
-                    </p>
-                    <a href="https://ndev02.github.io/WIL" target="_blank">Click to view</a>
-                </div>
-                <img src="/assets/ml5.png" alt="ML5">
-            </div>
         </div>
         <div class="section">
             <h2 class="section-header" id="contact">Contact</h2>
             <p class="paragraph fill-width">
+                If you need to get in touch with me for any reason you can reach out to me either via the email below or 
+                through my github profile. I will usually reply within 24 hours, I look forward to hearing from you!
+                </br>
+                </br>
                 Email: <a href="mailto:ngordondeveloper@gmail.com">ngordondeveloper@gmail.com</a>
                 </br>
-                GitHub: <a href="https://GitHub.com/NDev02">https://GitHub.com/NDev02</a>
+                GitHub: <a href="https://GitHub.com/NDev02">https://github.com/ndev02</a>
             </p>
         </div>
     </div>

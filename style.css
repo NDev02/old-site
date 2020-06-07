@@ -2,7 +2,7 @@
 :root {
     --primary: #eeeeee;
     --on-primary: black;
-    --secondary: #333333;
+    --secondary: #7a7a7a;
     --on-secondary: white;
     --transparent-background: rgba(0, 0, 0, 0.5);
     --nav-background: #343c58;
@@ -58,7 +58,7 @@ body {
 }
 
 .footer {
-    background: var(--secondary);
+    background: var(--nav-background);
     color: var(--on-secondary);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -72,7 +72,7 @@ body {
 }
 
 .footer a:hover {
-    color: var(--nav-background);
+    color: var(--secondary);
 }
 
 .video-background {
@@ -102,11 +102,15 @@ body {
 .head-group {
     align-self: center;
     text-align: center;
+    animation: 1s fade-in ease-in;
 }
 
 .landing .paragraph {
+    opacity: 0;
     max-width: 30em;
     align-self: center;
+    animation: 1s fade-in 1s;
+    animation-fill-mode: forwards;
 }
 
 .paragraph {
@@ -125,7 +129,7 @@ body {
 .nav ul {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     padding: 0.5em;
     margin: 0;
 }
@@ -170,6 +174,7 @@ body {
     margin-top: -100px;
     -webkit-background-clip: content-box;
     background-clip: content-box;
+    font-weight: bolder;
 }
 
 .section .image-div {
@@ -263,9 +268,58 @@ a:hover {
     color: var(--secondary);
 }
 
+@keyframes fade-in {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
 @media (max-width: 800px) {
 
+    .nav.open {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        animation: 0.2s fade-in;
+        animation-fill-mode: forwards;
+    }
+
+    .nav.open ul {
+        grid-auto-rows: 1fr;
+    }
+
+    .nav.open ul li:first-child {
+        margin-bottom: 1em;
+    }
+
+    .nav.open ul li:not(:first-child) {
+        display: block;
+        margin: 0;
+        padding: 0.5em;
+        text-align: left;
+    }
+
+    .nav ul {
+        grid-template-columns: unset;
+    }
+
     .nav ul li:first-child {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav ul li:not(:first-child) {
         display: none;
     }
 
@@ -282,4 +336,13 @@ a:hover {
     .section .image-div img {
         width: 60px;
     }
+
+    .footer {
+        grid-template-columns: unset;
+    }
+
+    .footer :nth-child(2) {
+        display: none;
+    }
+
 }

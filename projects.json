@@ -1,0 +1,21 @@
+[
+    {
+        "title": "Framer",
+        "description": "A janky-ish, in-development, web-framework. I mainly developed this framework because I was bored during quarantine, but hey why not put it online 🤷‍♂️. Don't expect it to work amazingly, and definitely don't expect it to work all the time. This project is currently not in a place I would recommend for distribution... Let's call this v0.0.1 beta.",
+        "link-to": "https://github.com/NDev02/Framer",
+        "image": "https://github.com/NDev02/Framer/raw/master/assets/Framer%20Logo.svg",
+        "image-alt": "Framer Logo"
+    }, {
+        "title": "WIL",
+        "description": "Using machine learning with ML5 and Tensorflow this is a website that has been trained on pre-existing blocks of text that it is able to use to generate new chunks of text. The models are pre-trained so that performance is optimal on most devices. Simply open the website, plug in a few parameters, choose a model from a dropdown and hit run.",
+        "link-to": "https://ndev02.github.io/WIL",
+        "image": "https://www.gstatic.com/devrel-devsite/prod/vbbb6dd37c071e57dbfce1249762e4d342b93b36af15e7676b1059db22e43eb43/tensorflow/images/lockup.svg?dcb_=0.549183097031877",
+        "image-alt": "Tensorflow JS Logo"
+    }, {
+        "title": "Scoutbase",
+        "description": "An application built for FRC 2020. In high school I participated in our school's FIRST Robotics club, this application was built for us to collect 'Scouting' data during competition matches for developing strategies against other teams and identifying teams we worked well with. This installable web-application interfaces with a database in Firebase and another FRC API by the Blue Alliance.",
+        "link-to": "https://ndev02.github.io/Scoutbase2020",
+        "image": "https://ndev02.github.io/Scoutbase2020/assets/test/team.png",
+        "image-alt": "Victor Robotics Logo"
+    }
+]
